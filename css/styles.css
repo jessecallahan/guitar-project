@@ -1,0 +1,8 @@
+.submit input {
+    margin-right:20px;
+    margin-left: 20px;
+  }
+
+  .checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+  }
