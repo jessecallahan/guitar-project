@@ -1,16 +1,19 @@
 
 
   $(document).ready(function() {
-    $(".submit").click(function(event) {
+    $("form#in").submit(function(event) {
       event.preventDefault();
 
-    //   var GuiTar = $("input#enter").val();
+      var secondString = $("input:radio[name=secondstring]:checked").val();
+
+      var firstString = $("input:radio[name=firststring]:checked").val();
 
     // if (GuiTar == val "a2"){
     //     $(".output").append("F#")
 
     //     else {
-            $(".output").append("I don't know")
+            $(".output").append(secondString);
+            $(".output").append(firstString);
         // }
 
 
