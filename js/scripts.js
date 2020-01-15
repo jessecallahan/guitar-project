@@ -8,13 +8,35 @@
 
       var firstString = $("input:radio[name=firststring]:checked").val();
 
-    // if (GuiTar == val "a2"){
-    //     $(".output").append("F#")
+      if (firstString === "a1"){
+        $(".output").text("F");
+      }
+      else if (firstString === "b1"){
+        $(".output").text("F#");
+      }
+        else if (firstString === "c1"){
+          $(".output").text("G");
+      }
+      else if (firstString === "d1"){
+        $(".output").text("G#");
+    }
 
-    //     else {
-            $(".output").append(secondString);
-            $(".output").append(firstString);
-        // }
+    if (secondString === "a2"){
+      $(".output").text("Bb");
+    }
+    else if (secondString === "b2"){
+      $(".output").text("B");
+    }
+      else if (secondString === "c2"){
+        $(".output").text("C");
+    }
+    else if (secondString === "d2"){
+      $(".output").text("C#");
+  }
+
+
+            // $(".output").append(secondString);
+            // $(".output").append(firstString);
 
 
     });
